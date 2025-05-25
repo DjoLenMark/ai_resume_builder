@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body { font-family: 'SF Pro Display', 'San Francisco', Arial, sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white shadow-2xl rounded-3xl p-10 w-full max-w-2xl">
+        <h1 class="text-3xl font-bold mb-2">{{ name }}</h1>
+        <h2 class="text-xl text-gray-600 mb-6">{{ profession }}</h2>
+        <div class="mb-4">
+            <h3 class="font-semibold text-gray-700">Образование</h3>
+            <p class="text-gray-800">{{ education }}</p>
+        </div>
+        <div class="mb-4">
+            <h3 class="font-semibold text-gray-700">Опыт работы</h3>
+            <p class="text-gray-800">{{ experience }}</p>
+        </div>
+        <div class="mb-4">
+            <h3 class="font-semibold text-gray-700">Навыки</h3>
+            <p class="text-gray-800">{{ skills }}</p>
+        </div>
+        <div class="mb-4">
+            <h3 class="font-semibold text-gray-700">Контакты</h3>
+            <p class="text-gray-800">{{ contacts }}</p>
+        </div>
+        <a href="/" class="inline-block mt-6 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-xl shadow transition">Заполнить заново</a>
+    </div>
+</body>
+</html> 
